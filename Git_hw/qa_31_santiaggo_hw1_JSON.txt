@@ -14,7 +14,7 @@ JSON
 
 8. Закоммитить файл.
 
-	git commit -m 'Add new.json'
+	git commit -m 'Create new.json'
 
 9. Отправить файл на внешний GitHub репозиторий.
 
@@ -22,7 +22,7 @@ JSON
 
 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
 
-	cat > new.json
+	cat >> new.json
 	{
    	"name": "Aleksandr",
    	"age": 35,
@@ -41,13 +41,13 @@ JSON
 
 cat > preferences.json
 {
-        "favourites" : {
-                "movie" : "Ivan Vasilievich change profession",
-                "tv series" : "Friends",
-                "food" : "Pelmeni",
-                "season" : "Summer",
-                "coutry_to_visit" : "Iceland"
-                }
+   "favourites" : {
+      	"movie" : "Ivan Vasilievich change profession",
+         "tv series" : "Friends",
+         "food" : "Pelmeni",
+         "season" : "Summer",
+         "coutry_to_visit" : "Iceland"
+         }
 }
 
 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON.

@@ -23,12 +23,12 @@ XML
 
  27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
 
-	cat new.xml
+	cat >> new.xml
 	<person>
-        	<name>Aleksandr</name>
-        	<age>35</age>
-        	<pets>0</pets>
-        	<salary>100000</salary>
+      <name>Aleksandr</name>
+      <age>35</age>
+      <pets>0</pets>
+      <salary>100000</salary>
 	</person>
 
  28. Отправить изменения на внешний репозиторий.
@@ -43,34 +43,34 @@ XML
 
  30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
 
-	cat > preferences.xml
+	cat >> preferences.xml
 	<pref>
-   		<movie>Interstellar</movie>
-   		<series>Brassic</series>
-   		<food>Pizza</food>
-   		<season>Summer</season>
-   		<coutry>Canada</coutry>
+   	<movie>Interstellar</movie>
+   	<series>Brassic</series>
+   	<food>Pizza</food>
+   	<season>Summer</season>
+   	<coutry>Canada</coutry>
 	</pref>
 	
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
 
 	cat > skills.xml
 	<course>
-   		<testing>
-      		<s1>Web Testing</s1>
-      		<s2>Mobile Testing</s2>
-      		<s3>Functional Testing</s3>
-      		<s4>Exploratory Testing</s4>
-      		<s5>API Testing</s5>
-   		</testing>
-   		<tools>
-      		<t1>Developer Tools</t1>
-      		<t2>GIT</t2>
-      		<t3>Postman</t3>
-     	 		<t4>CLI</t4>
-      		<t5>Charles Proxy</t5>
-      		<t6>PostgreSQL</t6>
-      		<t7>Dbeaver</t7>
+   	<testing>
+      	<s1>Web Testing</s1>
+      	<s2>Mobile Testing</s2>
+      	<s3>Functional Testing</s3>
+      	<s4>Exploratory Testing</s4>
+      	<s5>API Testing</s5>
+   	</testing>
+   	<tools>
+      	<t1>Developer Tools</t1>
+      	<t2>GIT</t2>
+      	<t3>Postman</t3>
+     	 	<t4>CLI</t4>
+      	<t5>Charles Proxy</t5>
+      	<t6>PostgreSQL</t6>
+      	<t7>Dbeaver</t7>
 	</course>
 
  32. Сделать коммит в одну строку.
