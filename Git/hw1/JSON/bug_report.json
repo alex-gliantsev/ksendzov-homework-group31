@@ -1,0 +1,16 @@
+{
+   "ID" : 1,
+   "Environment" : {
+      "OS" : "Windows 11",
+      "Browser" : "Chrome"
+   },
+   "Title" : "When the browser window width is reduced to 1023 pixels, the LogIn and Trade Now buttons in the site header become unavailable",
+   "Steps" : {
+      "1" : "Open Capital.com",
+      "2" : "Reduce browser window width to 1023px",
+      "3" : "Make sure the LogIn and Trade Now buttons in the site header are available"
+   },
+   "ER" : "The LogIn and Trade Now buttons in the site header are available",
+   "AR" : "The LogIn and Trade Now buttons in the site header are unavailable",
+   "Attachment" : "https://github.com/alex-gliantsev/JSON/blob/main/headerButtons.png"
+}

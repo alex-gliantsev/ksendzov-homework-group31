@@ -1,0 +1,17 @@
+<report>
+  <bug id="1">
+    <env>
+      <os>Windows</os>
+      <browser>Chrome</browser>
+    </env>
+    <title>When the browser window width is reduced to 1023 pixels, the LogIn and Trade Now buttons in the site header become unavailable</title>
+    <steps>
+      <s1>Open Capital.com</s1>
+      <s2>Reduce browser window width to 1023px</s2>
+      <s3>Make sure the LogIn and Trade Now buttons in the site header are available</s3>
+    </steps>
+    <er>The LogIn and Trade Now buttons in the site header are available</er>
+    <ar>The LogIn and Trade Now buttons in the site header are unavailable</ar>
+    <file xlink:type="simple" xlink:href="https://github.com/alex-gliantsev/JSON/blob/main/headerButtons.png">Attachment</file>
+  </bug>
+</report>

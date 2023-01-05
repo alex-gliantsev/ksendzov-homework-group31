@@ -1,0 +1,17 @@
+<course>
+   <testing>
+      <s1>Web Testing</s1>
+      <s2>Mobile Testing</s2>
+      <s3>Functional Testing</s3>
+      <s4>Exploratory Testing</s4>
+      <s5>API Testing</s5>
+   </testing>
+   <tools>
+      <t1>Developer Tools</t1>
+      <t2>GIT</t2>
+      <t3>Postman</t3>
+      <t4>CLI</t4>
+      <t5>Charles Proxy</t5>
+      <t6>PostgreSQL</t6>
+      <t7>Dbeaver</t7>
+</course>
