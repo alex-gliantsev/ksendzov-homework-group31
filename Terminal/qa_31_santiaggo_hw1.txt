@@ -1,0 +1,118 @@
+1) Посмотреть где я
+   
+   $ pwd
+
+2) Создать папку
+   
+   $ mkdir dir1
+
+3) Зайти в папку
+   
+   $ cd dir1
+
+4) Создать 3 папки
+   
+   $ mkdir sdir1 sdir2 sdir3
+
+5) Зайти в любоую папку
+   
+   $ cd sdir1
+
+6) Создать 5 файлов (3 txt, 2 json)
+   
+   $ touch file1.txt file2.txt file3.txt file4.json file5.json
+
+7) Создать 3 папки
+   
+   $ mkdir dir10 dir11 dir12
+
+8) Вывести список содержимого папки
+   
+   $ ls -la
+
+9) + Открыть любой txt файл
+   
+   $ vim file1.txt
+
+10) + Написать туда что-нибудь, любой текст
+11) + Сохранить и выйти
+   i - 'some text' - esc - :wq
+
+12) Выйти из папки на уровень выше
+   
+   $ cd ..
+
+13) Переместить любые 2 файла, которые вы создали, в любую другую папку
+   
+   $ mv file2.txt file4.json dir10/
+
+14) Скопировать любые 2 файла, которые вы создали, в любую другую папку
+   
+   $ cp file3.txt file5.json dir11/
+
+15) Найти файл по имени
+   
+   $ find -name file2.txt
+
+   $ find -name 'file2*'
+
+17) Вывести несколько первых строк из текстового файла
+   
+   $ head -n5 file3.txt
+
+18) Вывести несколько последних строк из текстового файла
+   
+   $ tail -n5 file3.txt
+
+19) Просмотреть содержимое длинного файла (команда less) изучите как она работает
+   
+   $ less file1.txt
+
+20) вывести дату и время
+   
+   $ date
+
+Задание *
+1) Отправить http запрос на сервер. http://162.55.220.72:5005/terminal-hw-request
+   
+   $ curl http://162.55.220.72:5005/terminal-hw-request
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+   1 вариант (vim):
+
+      $ touch myscript.sh
+      $ vim myscript.sh
+
+      # в редакторе набираю команды:
+
+      #!/bin/bash
+      mkdir dir100
+      cd dir100
+      mkdir dir101 dir102 dir103
+      cd dir101
+      touch f1.txt f2.txt f3.txt f4.json f5.json
+      mkdir sdir101 sdir102 sdir103
+      ls -la
+      mv f2.txt f4.json sdir101
+	tree
+      echo "Получилось :)"
+
+      $ bash myscript.sh
+
+   2 вариант (cat):
+      
+      cat > myscript.sh
+      #!/bin/bash
+      mkdir dir100
+      cd dir100
+      mkdir dir101 dir102 dir103
+      cd dir101
+      touch f1.txt f2.txt f3.txt f4.json f5.json
+      mkdir sdir101 sdir102 sdir103
+      ls -la
+      mv f2.txt f4.json sdir101
+	tree
+      echo "Получилось :)"
+
+      $ bash myscript.sh
