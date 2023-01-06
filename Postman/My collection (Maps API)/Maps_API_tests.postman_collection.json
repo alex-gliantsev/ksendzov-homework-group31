@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "ef3530ac-a9a6-42c3-a59f-796d35ebd5e6",
+		"name": "Maps API positive",
+		"description": "Base URL: [https://rahulshettyacademy.com](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVR5TWFKQTh3SEhURTh3eUlzSU9ERXRtZWMyQXxBQ3Jtc0tuSlRWeFdNVzNYTE11YUZLQTE1YXJIa282ZUc1ZFFoa2t0dVVNSkhuNEI3MGx6b0Nma3lkNTJKY3pYVlA1MnhQcHRvMXFqMEc5LWI0amFTNGo5bllmTXhNdlJzRkZYOU1XMXFtNmRQaktCZU5lSnJEaw&q=https://rahulshettyacademy.com/&v=55l6XIEK9l0)\n\nОбязательный параметр для всех запросов: key =qaclick123\n\n**POST:**\n\nResource: /maps/api/place/add/json\n\nSample Body:  \n{  \n\"location\": {  \n\"lat\": -38.383494,  \n\"lng\": 33.427362  \n},  \n\"accuracy\": 50,  \n\"name\": \"New place\",  \n\"phone_number\": \"(+1) 111 111 1111\",  \n\"address\": \"7, Pushkin street\",  \n\"types\": \\[  \n\"gym\",  \n\"cafe\"  \n\\],  \n\"website\": \"[http://google.com](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa3BzcnFFQno3NVJBWWoxTHVpQmctUXVfMEdTZ3xBQ3Jtc0trZFJiLTVaWS0xU2VhdVlRcmx5ZmdCNVlOek1qdTM3MnhHa05CbTM0eXlCNWtEMGNHemtudF9CN3RydERldTllT2tpRWZTN21QWTNSMnFxY2wtSmZjWmFkS042eDk0UzI1UExldG1td0RSU3dsRXJUSQ&q=http://google.com/&v=55l6XIEK9l0)\",  \n\"language\": \"French-IN\"  \n}\n\n**GET:**  \nResource: /maps/api/place/get/json  \nQuery Parameters: key, place_id ( place_id value comes from Add place response)\n\n**PUT:**  \nResource: /maps/api/place/update/json  \nSample Body:  \n{  \n\"place_id\":\"8d2573bdf6ceec0e474c5f388fa917fb\",  \n\"address\":\"70 Summer walk, USA\",  \n\"key\":\"qaclick123\"  \n}\n\n**DELETE:**  \nResource: /maps/api/place/delete/json  \nSample Body:  \n{  \n\"place_id\":\"928b51f64aed18713b0d164d9be8d67f\"  \n}",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18246794"
+	},
+	"item": [
+		{
+			"name": "Add place",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Получить доступ к response и поместить значение Place_id в переменную\r",
+							"pm.test(\"Set variable\", function () {\r",
+							"    var resp = pm.response.json();\r",
+							"    pm.environment.set(\"placeid\", resp.place_id);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"location\": {\r\n\"lat\": -38.383494,\r\n\"lng\": 33.427362\r\n},\r\n\"accuracy\": 50,\r\n\"name\": \"New place\",\r\n\"phone_number\": \"(+1) 111 111 1111\",\r\n\"address\": \"7, Pushkin street\",\r\n\"types\": [\r\n\"gym\",\r\n\"cafe\"\r\n],\r\n\"website\": \"http://google.com\",\r\n\"language\": \"French-IN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{burl}}/maps/api/place/add/json?key={{key}}",
+					"host": [
+						"{{burl}}"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"add",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						}
+					]
+				},
+				"description": "Base URL: [https://rahulshettyacademy.com](https://desktop.postman.com/?desktopVersion=9.19.0&userId=18246794&teamId=0)\n\nОбязательный параметр для всех запросов: key =qaclick123\n\n**POST:**\n\nResource: /maps/api/place/add/json\n\n{  \n\"location\": {  \n\"lat\": -38.383494,  \n\"lng\": 33.427362  \n},  \n\"accuracy\": 50,  \n\"name\": \"New place\",  \n\"phone_number\": \"(+1) 111 111 1111\",  \n\"address\": \"7, Pushkin street\",  \n\"types\": \\[  \n\"gym\",  \n\"cafe\"  \n\\],  \n\"website\": \"[http://google.com](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa3BzcnFFQno3NVJBWWoxTHVpQmctUXVfMEdTZ3xBQ3Jtc0trZFJiLTVaWS0xU2VhdVlRcmx5ZmdCNVlOek1qdTM3MnhHa05CbTM0eXlCNWtEMGNHemtudF9CN3RydERldTllT2tpRWZTN21QWTNSMnFxY2wtSmZjWmFkS042eDk0UzI1UExldG1td0RSU3dsRXJUSQ&q=http://google.com/&v=55l6XIEK9l0)\",  \n\"language\": \"French-IN\"  \n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Get place",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// Если статус-код 200 - проверить ожидаемое значение address в Response. Если статус-код 404 (после запроса Remove place) - закончить тест\r",
+							"pm.test(\"Status code verification\", function () {\r",
+							"    if (pm.response.code === 200) {\r",
+							"        pm.test(\"Adress is correct\", function () {\r",
+							"            var resp = pm.response.json();\r",
+							"            pm.expect(resp.address).to.eql(\"7, Pushkin street\");\r",
+							"        });\r",
+							"    }\r",
+							"    else {\r",
+							"        pm.response.to.have.status(404);\r",
+							"        postman.setNextRequest(null);\r",
+							"        }\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{burl}}/maps/api/place/get/json?key={{key}}&place_id={{placeid}}",
+					"host": [
+						"{{burl}}"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"get",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "place_id",
+							"value": "{{placeid}}"
+						}
+					]
+				},
+				"description": "Base URL: [https://rahulshettyacademy.com](https://desktop.postman.com/?desktopVersion=9.19.0&userId=18246794&teamId=0)\n\nОбязательный параметр для всех запросов: key =qaclick123\n\nResource: /maps/api/place/get/json\n\nQuery Parameters: key, place_id (place_id value comes from Add place response)"
+			},
+			"response": []
+		},
+		{
+			"name": "Update place",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Проверить ожидаемое значение сообщения в Response\r",
+							"pm.test(\"Update success\", function () {\r",
+							"    var resp = pm.response.json();\r",
+							"    pm.expect(resp.msg).to.eql(\"Address successfully updated\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"place_id\":\"{{placeid}}\",\r\n\"address\":\"77, Chaykovski street\",\r\n\"key\":\"qaclick123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{burl}}/maps/api/place/update/json?key={{key}}",
+					"host": [
+						"{{burl}}"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"update",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						}
+					]
+				},
+				"description": "Base URL: [https://rahulshettyacademy.com](https://desktop.postman.com/?desktopVersion=9.19.0&userId=18246794&teamId=0)\n\nОбязательный параметр для всех запросов: key =qaclick123\n\nResource: /maps/api/place/update/json  \nSample Body:  \n{  \n\"place_id\":\"**comes from 'Add place' responce**\",  \n\"address\":\"77, Chaykovski street\",  \n\"key\":\"qaclick123\"  \n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove place",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// После выполнения запроса Remove place апустить запрос Get place\r",
+							"postman.setNextRequest('Get place');"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"place_id\":\"{{placeid}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{burl}}/maps/api/place/delete/json?key={{key}}",
+					"host": [
+						"{{burl}}"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"delete",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						}
+					]
+				},
+				"description": "Base URL: [https://rahulshettyacademy.com](https://desktop.postman.com/?desktopVersion=9.19.0&userId=18246794&teamId=0)\n\nОбязательный параметр для всех запросов: key =qaclick123\n\nResource: /maps/api/place/delete/json\n\nSample Body:  \n{  \n\"place_id\":\"**comes from 'Add place' response**\"  \n}"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "key",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "burl",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "placeid",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}

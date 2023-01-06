@@ -1,0 +1,404 @@
+{
+	"info": {
+		"_postman_id": "95b2b030-703d-48ca-955c-6937d20799dc",
+		"name": "Ksendzov_hw_1",
+		"description": "URL: http://162.55.220.72:5005\n\nAlter ports: 5006/5007/5008/5009",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18246794"
+	},
+	"item": [
+		{
+			"name": "EP_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5006/get_method?name=Boris&age=25",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5006",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Boris"
+						},
+						{
+							"key": "age",
+							"value": "25"
+						}
+					]
+				},
+				"description": "**Method:** GET  \n**EndPoint:** /get_method  \nrequest url params:  \nname: str  \nage: int\n\n**Response:**  \n\\[  \n“Str”,  \n“Str”  \n\\]"
+			},
+			"response": []
+		},
+		{
+			"name": "EP_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Gleb",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "26",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "15000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5006/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5006",
+					"path": [
+						"user_info_3"
+					]
+				},
+				"description": "**Method:** POST  \n**EndPoint:** /user_info_3  \nrequest form data:  \nname: str  \nage: int  \nsalary: int\n\n**Response:**  \n{'name': name,  \n'age': age,  \n'salary': salary,  \n'family': {'children': \\[\\['Alex', 24\\], \\['Kate', 12\\]\\],  \n'u_salary_1_5_year': salary \\* 4}}"
+			},
+			"response": []
+		},
+		{
+			"name": "EP_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5006/object_info_1?name=Afonasiy&age=31&weight=100",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5006",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Afonasiy"
+						},
+						{
+							"key": "age",
+							"value": "31"
+						},
+						{
+							"key": "weight",
+							"value": "100"
+						}
+					]
+				},
+				"description": "**Method:** GET  \n**EndPoint:** /object_info_1  \nrequest url params:  \nname: str  \nage: int  \nweight: int\n\n**Response:**  \n{'name': name,  \n'age': age,  \n'daily_food': weight \\* 0.012,  \n'daily_sleep': weight \\* 2.5}"
+			},
+			"response": []
+		},
+		{
+			"name": "EP_4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5006/object_info_2?name=Kirill&age=35&salary=13000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5006",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Kirill"
+						},
+						{
+							"key": "age",
+							"value": "35"
+						},
+						{
+							"key": "salary",
+							"value": "13000"
+						}
+					]
+				},
+				"description": "**Method:** GET  \n**EndPoint**: /object_info_2  \nrequest url params:  \nname: str  \nage: int  \nsalary: int\n\n**Response:**  \n{'start_qa_salary': salary,  \n'qa_salary_after_6_months': salary \\* 2,  \n'qa_salary_after_12_months': salary \\* 2.7,  \n'qa_salary_after_1.5_year': salary \\* 3.3,  \n'qa_salary_after_3.5_years': salary \\* 3.8,  \n'person': {'u_name': \\[user_name, salary, age\\],  \n'u_age': age,  \n'u_salary_5_years': salary \\* 4.2}  \n}"
+			},
+			"response": []
+		},
+		{
+			"name": "EP_5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5006/object_info_3?name=Mefodiy&age=40&salary=17000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5006",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mefodiy"
+						},
+						{
+							"key": "age",
+							"value": "40"
+						},
+						{
+							"key": "salary",
+							"value": "17000"
+						}
+					]
+				},
+				"description": "**Method**: GET  \n**EndPoint:** /object_info_3  \nrequest url params:  \nname: str  \nage: int  \nsalary: int\n\n**Response:**  \n{'name': name,  \n'age': age,  \n'salary': salary,  \n'family': {'children': \\[\\['Alex', 24\\], \\['Kate', 12\\]\\],  \n'pets': {'cat':{'name':'Sunny',  \n'age': 3},  \n'dog':{'name':'Luky',  \n'age': 4}},  \n'u_salary_1_5_year': salary \\* 4}  \n}"
+			},
+			"response": []
+		},
+		{
+			"name": "EP_6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5006/object_info_4?name=Conor&age=35&salary=11000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5006",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Conor"
+						},
+						{
+							"key": "age",
+							"value": "35"
+						},
+						{
+							"key": "salary",
+							"value": "11000"
+						}
+					]
+				},
+				"description": "**Method:** GET  \n**EndPoint:** /object_info_4  \nrequest url params:  \nname: str  \nage: int  \nsalary: int\n\n**Response:**  \n{'name': name,  \n'age': int(age),  \n'salary': \\[salary, str(salary \\* 2), str(salary \\* 3)\\]}"
+			},
+			"response": []
+		},
+		{
+			"name": "EP_7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Luke",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "33",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "8000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5006/user_info_2",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5006",
+					"path": [
+						"user_info_2"
+					]
+				},
+				"description": "**Method:** POST  \n**EndPoint:** /user_info_2  \nrequest form data:  \nname: str  \nage: int  \nsalary: int\n\n**Response:**  \n{'start_qa_salary': salary,  \n'qa_salary_after_6_months': salary \\* 2,  \n'qa_salary_after_12_months': salary \\* 2.7,  \n'qa_salary_after_1.5_year': salary \\* 3.3,  \n'qa_salary_after_3.5_years': salary \\* 3.8,  \n'person': {'u_name': \\[user_name, salary, age\\],  \n'u_age': age,  \n'u_salary_5_years': salary \\* 4.2}  \n}"
+			},
+			"response": []
+		}
+	]
+}
