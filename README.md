@@ -31,3 +31,6 @@
 ### Python:
 - [Home work 1: Variables](https://github.com/alex-gliantsev/group31_hw/blob/main/Python/qa_31_santiaggo_hw1.py)
 - [Home work 2: If](https://github.com/alex-gliantsev/group31_hw/blob/main/Python/qa_31_santiaggo_hw2.py)
+
+### JMeter:
+- [Home work 1](https://github.com/alex-gliantsev/group31_hw/tree/main/JMeter/HW1)
