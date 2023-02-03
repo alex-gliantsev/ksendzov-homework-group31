@@ -1,10 +1,11 @@
 # Домашняя работа
-## Группа 31
-Привет :grinning:. 
+### Группа 31
+### Саша @santiggo из Еревана
+Привет :grinning:
 
 Тут список ссылок на мои домашние задания для удобства. Приятного просмотра :wink:
 
-![](https://media.giphy.com/media/Rsp9jLIy0VZOKlZziw/giphy.gif)
+<img src="https://media.giphy.com/media/Rsp9jLIy0VZOKlZziw/giphy.gif" width="350" height="350" alt="sensei">
 
 ### Git:
 - [Home work 1: JSON, XML, TXT](https://github.com/alex-gliantsev/group31_hw/tree/main/Git/hw1)
