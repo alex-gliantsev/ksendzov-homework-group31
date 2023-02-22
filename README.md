@@ -42,9 +42,10 @@
 - [Video](https://drive.google.com/file/d/1zTMoUah8Kpgz2hkF1_ye1N8Ex-IOPC3b/view?usp=share_link)
 
 ### Test documentation:
-- [ToDo List: Check list, Bug report](https://docs.google.com/spreadsheets/d/12OeUqwMCmTgrgVc_DCykuL-wry61Bkf37Iv1JKwqD08/edit?usp=share_link)
-- [Web form: Check list, Bug report, Improvements](https://docs.google.com/spreadsheets/d/15_kPrCi9etslLAr5cULZfgh8d-ekbE_nnhTNmOsFbWE/edit?usp=share_link)
-- [Investmate: Check list, Bug report](https://docs.google.com/spreadsheets/d/1E9p9Husjr8Q85wWEVbAQqZk3hNIKe0qXni8w4Q27MCs/edit?usp=share_link)
-- [Liveliness: Check list](https://docs.google.com/spreadsheets/d/1bzQcNGtPK4IOXwFNuZu32pESwMksaB8KyJFYFae7K7w/edit?usp=share_link)
-- [My Bug reports](https://docs.google.com/spreadsheets/d/1Mx0zXx4vIJ1Arisw7wlLu6zCiV73qIecitNF1rWSQhY/edit?usp=share_link)
-- [Crypto Price Widget: Check list, Bug report](https://docs.google.com/spreadsheets/d/1bEHzZTf94ZH7WJKs6k9qUn2qsfGZchHAMc2Ioke4_fA/edit?usp=share_link)
+- [**Crypto Price Widget:** Check list, Bug report](https://docs.google.com/spreadsheets/d/1eQf6PqHvFpOmWVpSMBnR_obFSTEjLTDyg4D-fPKkBPw/edit?usp=share_link)
+- [**Capital.com:** Check list, Bug report](https://docs.google.com/spreadsheets/d/1-3lwptz8v-PeazvT7zrvAOB-b9HD59oJAuareBNUBXg/edit?usp=share_link)
+- [**ToDo List:** Check list, Bug report](https://docs.google.com/spreadsheets/d/12OeUqwMCmTgrgVc_DCykuL-wry61Bkf37Iv1JKwqD08/edit?usp=share_link)
+- [**Web form:** Check list, Bug report, Improvements](https://docs.google.com/spreadsheets/d/15_kPrCi9etslLAr5cULZfgh8d-ekbE_nnhTNmOsFbWE/edit?usp=share_link)
+- [**Investmate:** Check list, Bug report](https://docs.google.com/spreadsheets/d/1E9p9Husjr8Q85wWEVbAQqZk3hNIKe0qXni8w4Q27MCs/edit?usp=share_link)
+- [**Liveliness:** Check list](https://docs.google.com/spreadsheets/d/1bzQcNGtPK4IOXwFNuZu32pESwMksaB8KyJFYFae7K7w/edit?usp=share_link)
+- [**My Bug reports**](https://docs.google.com/spreadsheets/d/1Mx0zXx4vIJ1Arisw7wlLu6zCiV73qIecitNF1rWSQhY/edit?usp=share_link)
