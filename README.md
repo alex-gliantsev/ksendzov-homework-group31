@@ -42,7 +42,8 @@
 - [Video](https://drive.google.com/file/d/1zTMoUah8Kpgz2hkF1_ye1N8Ex-IOPC3b/view?usp=share_link)
 
 ### Test documentation:
-- [**Crypto Price Widget:** Check list, Bug report](https://docs.google.com/spreadsheets/d/1eQf6PqHvFpOmWVpSMBnR_obFSTEjLTDyg4D-fPKkBPw/edit?usp=share_link)
+- [**Crypto Price Widget:** Check list, Bug report (Russian)](https://docs.google.com/spreadsheets/d/1eQf6PqHvFpOmWVpSMBnR_obFSTEjLTDyg4D-fPKkBPw/edit?usp=share_link)
+- [**Crypto Price Widget:** Check list, Bug report (English)](https://docs.google.com/spreadsheets/d/1R689g0PZfUHalki49yvu3xPyLK0sdjjanRHc94tiWZc/edit?usp=share_link)
 - [**Capital.com:** Check list, Bug report](https://docs.google.com/spreadsheets/d/1-3lwptz8v-PeazvT7zrvAOB-b9HD59oJAuareBNUBXg/edit?usp=share_link)
 - [**ToDo List:** Check list, Bug report](https://docs.google.com/spreadsheets/d/12OeUqwMCmTgrgVc_DCykuL-wry61Bkf37Iv1JKwqD08/edit?usp=share_link)
 - [**Web form:** Check list, Bug report, Improvements](https://docs.google.com/spreadsheets/d/15_kPrCi9etslLAr5cULZfgh8d-ekbE_nnhTNmOsFbWE/edit?usp=share_link)
